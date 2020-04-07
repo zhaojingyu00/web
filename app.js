@@ -1,14 +1,14 @@
 $(function () {
 	var $title = $(".title");
 	var $menus = $(".menus");
-	for (let index = 0; index < $title.length; index++) {
-		$title.eq(index).click(function () {
+	for (let num = 0; num < $title.length; num++) {
+		$title.eq(num).click(function () {
 			event.stopPropagation();
-			if ($menus.eq(index).hasClass('active')) {
-				$menus.eq(index).removeClass('active');
+			if ($menus.eq(num).hasClass('active')) {
+				$menus.eq(num).removeClass('active');
 				$title.unbind('mouseover')
 			} else {
-				$menus.eq(index).addClass('active');
+				$menus.eq(num).addClass('active');
 				for (let k = 0; k < $title.length; k++) {
 					$title.eq(k).mouseover(() => {
 						$menus.eq(k).addClass('active');
@@ -21,7 +21,7 @@ $(function () {
 				}
 				//取消显示其他二级菜单
 				for (let j = 0; j < $title.length; j++) {
-					if (j != index && $menus.eq(index).hasClass('active')) {
+					if (j != num && $menus.eq(num).hasClass('active')) {
 						$menus.eq(j).removeClass('active');
 					}
 				}
@@ -33,9 +33,9 @@ $(function () {
 		$title.click(()=>{
 			event.stopPropagation();
 		})
-		for (let index = 0; index < $title.length; index++) {
-			if ($menus.eq(index).hasClass('active')) {
-				$menus.eq(index).removeClass('active');
+		for (let num = 0; num < $title.length; num++) {
+			if ($menus.eq(num).hasClass('active')) {
+				$menus.eq(num).removeClass('active');
 				$title.unbind('mouseover')
 			}
 		}
@@ -120,9 +120,9 @@ $(function () {
             if ($('.menu-item').eq(m).html() == '字体(F)...') {
                 show(fontNode);
                 $('#lid').css('display','block')
-                for (let index = 0; index < $('.title').length; index++) {
-                    if ($(".menus").eq(index).hasClass('active')) {
-                        $(".menus").eq(index).removeClass('active');
+                for (let num = 0; num < $('.title').length; num++) {
+                    if ($(".menus").eq(num).hasClass('active')) {
+                        $(".menus").eq(num).removeClass('active');
                         $(".title").unbind('mouseover')
                     }
                 }

@@ -29,7 +29,7 @@ $(function () {
 		})
 	}
 	//点击其他位置取消显示二级菜单
-	$('.notepad-editor').click(() => {
+	$('.notepadEditor').click(() => {
 		$title.click(()=>{
 			event.stopPropagation();
 		})
@@ -115,9 +115,9 @@ $(function () {
         "</div>"+
     "</div>"
     )
-    for (let m = 0; m < $('.menu-item').length; m++) {
-        $('.menu-item').eq(m).click(() => {
-            if ($('.menu-item').eq(m).html() == '字体(F)...') {
+    for (let m = 0; m < $('.menuItem').length; m++) {
+        $('.menuItem').eq(m).click(() => {
+            if ($('.menuItem').eq(m).html() == '字体(F)...') {
                 show(fontNode);
                 $('#lid').css('display','block')
                 for (let num = 0; num < $('.title').length; num++) {

@@ -19,7 +19,7 @@ module.exports = function(grunt){
         uglify: {
             // my_target:{
               files: {
-                src:'./app.js',
+                src:'./web.js',
                 dest:'dist/app.js'
               } 
             // }

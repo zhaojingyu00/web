@@ -42,8 +42,7 @@ $(function () {
 	})
 
 
-	var fontNode = $(
-        "<div class='notepad-dlg-mask notepad-dlg-font'>"+
+    var fontNode = $("<div class='notepad-dlg-mask notepad-dlg-font'>"+
         "<div class='dialogbox notepad-dlgbox'>"+
             "<div class='notepad-dlg-titlebar'>"+
                 "<p class='title'>字体</p><span class='close-btn' title='关闭'>✖</span>"+

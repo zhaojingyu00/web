@@ -19,8 +19,8 @@ module.exports = function(grunt){
         uglify: {
             // my_target:{
               files: {
-                src:'./*.js',
-                dest:'dist/*.js'
+                src:'./app.js',
+                dest:'dist/app.js'
               } 
             // }
         },
@@ -43,8 +43,8 @@ module.exports = function(grunt){
       uglify: {
           // my_target:{
             files: {
-              src:'./*.js',
-              dest:'res/*.js'
+              src:'./app.js',
+              dest:'res/app.js'
             } 
           // }
       }
